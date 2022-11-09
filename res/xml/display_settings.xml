@@ -157,6 +157,13 @@
             settings:keywords="@string/keywords_auto_rotate"
             settings:controller="com.android.settings.display.DeviceStateAutoRotateOverviewController"/>
 
+        <!-- Disable Flag Secure toggle -->
+        <co.aospa.framework.preference.SecureSettingSwitchPreference
+            android:key="window_ignore_secure"
+            android:title="@string/ignore_window_secure_title"
+            android:summary="@string/ignore_window_secure_summary"
+            android:defaultValue="false" />
+
         <Preference
             android:key="screen_resolution"
             android:title="@string/screen_resolution_title"
@@ -229,5 +236,6 @@
             android:key="vr_display_pref"
             android:title="@string/display_vr_pref_title"
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
+
     </PreferenceCategory>
 </PreferenceScreen>
